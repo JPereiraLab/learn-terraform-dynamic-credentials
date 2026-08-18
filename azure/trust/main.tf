@@ -7,6 +7,8 @@ provider "azurerm" {
 
 provider "azuread" {}
 
+data "azuread_client_config" "current" {}
+
 provider "random" {}
 
 data "azurerm_subscription" "current" {}
